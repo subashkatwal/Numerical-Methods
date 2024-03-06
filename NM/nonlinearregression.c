@@ -1,37 +1,3 @@
-// #include <stdio.h>
-// #include <math.h>
-
-// #define MAX_SIZE 50
-
-// int main() {
-//     int i, n;
-//     float x[MAX_SIZE], y[MAX_SIZE], sx = 0, s_lgy = 0, sxy = 0, sx2 = 0;
-//     float a, b;
-//     printf("----------Subash Katwal---------\n");
-//     printf("Enter the number of data points:\n");
-//     scanf("%d", &n);
-
-//     printf("Enter the data points (x y):\n");
-//     for (i = 0; i < n; i++) {
-//         scanf("%f %f", &x[i], &y[i]);
-//     }
-
-//     // for summations
-//     for (i = 0; i < n - 1; i++) { // note: corrected the loop condition
-//         sx += x[i];
-//         s_lgy += log(y[i]);
-//         sxy += x[i] * log(y[i]);
-//         sx2 += x[i] * x[i];
-//     }
-
-//     b = ((n * sxy) - (sx * s_lgy)) / ((n * sx2) - (sx * sx));
-//  a = exp((s_lgy - b * sx) / n);
-
-//     printf("The equation in the form ae^(bx) is: y = %.2f * exp(%.3f * x)\n", a, b);
-
-//     return 0;
-// }
-
 
 #include <stdio.h>
 #include <math.h>

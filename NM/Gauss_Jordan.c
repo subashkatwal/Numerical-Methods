@@ -77,4 +77,5 @@ int main(){
     for (int i = 0; i < n; i++) {
         printf("x%d = %.2f\n", i + 1, matrix[i][n]);
     }
+    
 }

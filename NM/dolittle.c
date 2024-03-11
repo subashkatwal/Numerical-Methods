@@ -53,6 +53,7 @@ int main() {
         }
     }
 
+
     // Print Lower Triangular Matrix
     printf("\nLower Triangular Matrix:\n");
     for (i = 0; i < n; i++) {
@@ -69,23 +70,6 @@ int main() {
             printf("%.2f\t", u[i][j]);
         }
         printf("\n");
-    }
-
-    // Solving for z1, z2, z3, ...
-    float z[n];
-    z[0] = 1; // Arbitrarily chosen for demonstration
-    for (i = 1; i < n; i++) {
-        float sum = 0;
-        for (j = 0; j < i; j++) {
-            sum += l[i][j] * z[j];
-        }
-        z[i] = (1 - sum) / l[i][i];
-    }
-
-    // Print Values of z1, z2, z3, ...
-    printf("\nValues of z1, z2, z3, ... :\n");
-    for (i = 0; i < n; i++) {
-        printf("z%d = %.2f\n", i + 1, z[i]);
     }
 
     return 0;

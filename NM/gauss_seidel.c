@@ -19,28 +19,27 @@ int main()
     printf("Enter the allowed error: ");
     scanf("%lf", &error);
 
-    double x0 = 0, y0 = 0, z0 = 0, e1, e2, e3, x1, y1, z1;
+    double x0 = 0, y0 = 0, z0 = 0, e1, e2, e3;
     int count = 1;
     do
     {
-
-        x1 = f1(x0, y0, z0);
-        y1 = f2(x1, y0, z0);
-        z1 = f3(x1, y1, z0);
+        double x1 = f1(x0, y0, z0);
+        double y1 = f2(x1, y0, z0);
+        double z1 = f3(x1, y1, z0);
 
         e1 = absolute(x1, x0);
         e2 = absolute(y1, y0);
         e3 = absolute(z1, z0);
-
-        count++;
 
         x0 = x1;
         y0 = y1;
         z0 = z1;
 
         printf("%d\t%.2f\t%.2f\t%.2f\n", count, x1, y1, z1);
+        count++;
 
     } while (e1 > error && e2 > error && e3 > error);
 
     printf("x = %0.2f, y = %.2f, z = %.2f", x0, y0, z0);
+    return 0;
 }

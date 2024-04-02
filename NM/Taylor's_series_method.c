@@ -7,7 +7,7 @@ int factorial(int n) {
     else
         return n * factorial(n - 1);
 }
-
+    
 // Partial derivative with respect to x
 float partial_derivative_x(float x, float y) {
     return 2 * x + y;

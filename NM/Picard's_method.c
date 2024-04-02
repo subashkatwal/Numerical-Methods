@@ -3,7 +3,7 @@
 
 // Define the function f(x, y) representing the ordinary differential equation dy/dx = f(x, y)
 float f(float x, float y) {
-    return x + y; // Example: dy/dx = x + y
+    return x + y; 
 }
 
 // Perform one iteration of Picard's method

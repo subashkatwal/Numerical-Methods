@@ -84,7 +84,6 @@ void polynomial_regression(float x[], float y[], int n, int degree, float coeffi
 int main() {
     int n, degree;
     float x[MAX_SIZE], y[MAX_SIZE], coefficients[MAX_DEGREE + 1];
-    printf("----------Nabin Joshi---------\n");
     printf("Enter the number of data points: ");
     scanf("%d", &n);
 

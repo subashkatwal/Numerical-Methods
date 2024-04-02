@@ -10,7 +10,6 @@ int main() {
     float a, b;
     int choice;
 
-    printf("----------Subash Katwal---------\n");
     printf("Enter the number of data points:\n");
     scanf("%d", &n);
 
